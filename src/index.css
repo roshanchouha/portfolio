@@ -1,13 +1,444 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,300;1,400&display=swap');
+ 
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    transition: all .2s linear;
+    background: #fff;
+    background-color: transparent;
+}
+ 
+:root{
+  --green:green;
+  --black:#130f40;
+  --light-color:#666;
+  --box-shadow:0 .1rem 1rem  rgba(0,0,0.1);
+  --border:  2rem  solid  rgba(0,0,0.1);
+  --outline: .1rem solid rgba(0,0,0.1);
+
+}
+html{
+    /*  font-size: 62.5%;  */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:7rem;
+  }
+.navb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8px;
+    background:white;
+    
+    
+}
+#navigation{
+   box-shadow: var(--box-shadow);
+   position: fixed;
+   top:0;
+   left:0;
+   width: 100%;
+   z-index: 1000;
+}
+#home{
+    
+     width: 100vw;
+     height:90vh;
+     
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#home .herosection{
+  
+    margin: 15rem 3rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    width: 90%;
+}   
+#home .herosection .homedetail h1{
+   color: #130f40;
+  
+}
+ 
+ #home .herosection .image img{
+   width:   20rem;
+ 
+ }
+ #home .herosection .homedetail .butt{
+     
+     width: 120px;
+     padding: 3px;
+     border-radius: 20px;
+     background: blue;
+     color: white;
+     font-size: 13px;
+ }
+#but :hover{
+    background: white;
+    color: blue;
+ }
+
+@media (max-width:412px) {
+   #home   .homedetail{
+       
+      width: 20rem;
+   }
+   /* #home .herosection .image{
+       
+          position: relative;
+          left:20rem;
+       } */
+}
+ #into{
+    
+    width:100vw;
+    height:90vh;
+    background: white;
+ }
+
+ #into .about{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 5rem;
+    background: white;
+    
+    
+ } 
+
+ 
+ #into  .image img{
+    width: 500px;
+    height: 400px;
+    background: #eee;
+ }
+
+ #into .about .Detail{
+    
+    margin: 2rem;
+    padding: 1.5rem;
+    
+ }
+ #into .about .Detail h1,h3{
+    color: #130f40;
+    
+ }
+ #into .about .Detail h1:hover{
+    color: #666;
+ }
+ #into .about .hobbie{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3rem;
+ }
+
+ #eduction{
+ 
+    height: 100vh;
+
+ }
+ #eduction .EducationDetail{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin: 8rem 3rem ;
+    
+ }
+#eduction .schoolName{
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+   text-align: left;
+   
+}
+#eduction .schoolName .schoolInfo{ 
+    text-align: left;
+    background: transparent;
+
+}
+#eduction .schoolName .Degree{
+    color: #130f40;
+    margin-bottom: 1px;
+}
+#eduction .schoolName .field{
+  color: midnightblue;
+  margin-bottom: 1px;
+}
+#eduction .Qualification{
+    margin-bottom: -5px;
+}
+#eduction .Deg{
+    
+   padding: 1rem;
+   margin-left:200px;
+   display: grid;
+   grid-template-columns:  1fr 1fr;
+   grid-gap: 20px;
+}
+#eduction .MCA{
+   margin-left: 1rem;
+   transition: all 2s;
+}
+/* #eduction .MCA:hover{
+   margin-left: 1rem;
+} */
+
+#eduction .MCA .Date{
+   margin-left: -3.3rem;
+}
+#eduction .BCA{
+   margin-left: 1rem;
+   position:relative;
+   top: 12rem;
+}
+#eduction .BCA .Date{
+   margin-left: -3rem;
+}
+#eduction .ten{
+   margin-left: 1rem;
+   margin-top: 1rem;
+   position:relative;
+   top: 6rem;
+}
+#eduction  .twelev{
+   margin-left: 2rem;
+   position:relative;
+   top: 19rem;
+} 
+#eduction  .Line{
+   width: 5px;
+   height: 800px;
+   position: absolute;
+   left: 45rem;
+   border:5px solid #080246 !important; 
+   border-radius: 2rem;
+}
+#Card{
+   width: 400px;
+   background: blue;
+    
+}
+ 
+#Card1{
+   width: 400px;
+   color: #130f40;
+}
+#Card1 .Name{
+    color:#130f40;
+} 
+#eduction .ten .Date{
+   margin-left: -3.3rem;
+}
+#eduction .twelev .Date{
+   margin-left: -3.3rem;
+}
+#Skill .JS{
+   font-size: 5rem;
+   
+}
+#Skill .JS:hover{
+   background: black;
+   color:yellow;
+    
+}
+ 
+#Skill .HTML{
+   font-size: 5rem;
+   padding:  0 1rem;
+}
+#Skill .html{
+   padding:  0 1rem;
+}
+#Skill .html:hover{
+   background: orangered;
+   color:white;
+ 
+}
+
+#Skill .CSS{
+   font-size: 5rem;
+   padding: 0 1rem;
+}
+#Skill .Css{
+   padding: 0 1rem;
+}
+#Skill .Css:hover{
+   background: rgb(14, 114, 228);
+   color:white;
+   
+}
+#Skill .React{
+  width: 110px;
+  font-size: 5rem;
+  padding: 0 1rem;
+}
+#Skill .React:hover{
+   color:rgb(14, 111, 238);
+  
+}
+#Skill .Node{
+   width: 110px;
+   font-size: 5rem;
+   padding: 0 1rem;
+ }
+ #Skill .Node:hover{
+  color: green;
+ 
+ }
+
+ #Skill .MySql{
+   width: 120px;
+   padding: 0 1rem;
+ }
+ #Skill .MySql:hover{
+   background: rgb(79, 136, 241);
+   color: white;
+ }
+
+#Skill .Slogo{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content:space-around;
+    align-items: center;
+    grid-gap: 2rem;
+    width: 100vw;
+    margin: 10rem 0;
+   
+   
+    
+     
+}
+#Skills{
+   position: relative;
+   top:29rem;
+}
+#cards{
+    
+    width: 400px;
+    height: 260px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    
+}
+.Projects{
+   display: grid;
+   grid-template-columns: repeat(3,200px);
+   justify-content:space-between;
+   grid-gap: 2rem;
+   margin: 5rem 0rem;
+   margin-right: 10rem;
+  
+
+}
+
+.Cards{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;  
+}
+.Cards:hover{
+  background: #080246;
+}
+  .projectone{
+    visibility: hidden;
+}
+ 
+#work{
+   position: relative;
+   top:29rem;
+}
+
+.Link{
+   border: 2px solid #eee;
+    background: white;
+    position: fixed;
+    top:20rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    margin-left:0rem ;
+    width: 30px;
+     border-radius:0.5rem;
+     text-align: center;
+     padding: 5px 0;
+     font-size: 1.5rem;
+     box-shadow: 0 .1rem 1rem  rgb(4, 8, 214);
+     z-index: 900;
+}
+#Contects .Title{
+  margin: -0.5rem;
+}
+#Contects {
+   margin-top: 5rem;
+   
+  
+}
+#Contects .Form{
+   margin-top: 6rem;
+}
+#Img{
+   background-image: url(./image/background2.jpg);
+   background-color:transparent;
+   
+   filter: blur(4px);
+   position: absolute;
+   width: 81%;
+   height: 80vh;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index:-100;
+   margin: 5rem -2rem;
+   padding-bottom: 10rem;
+   
+}
+#Contects .Location{
+ 
+  box-shadow: var(--box-shadow);
+  margin-left: 10rem;
+  border-radius: 0.5rem;
+}
+#Cont{
+   position: relative;
+   top:29rem;
+}
+#Foot{
+   position: relative;
+   top:29rem;
+}
+.Footer{
+  
+   background:#080246;
+}
+.Footer .foot{
+   width: 50px;
+   margin-top: 1rem;
+   margin-left: 46%;
+}
+#Logo{
+   width:55px;
+  
+}
+.Flink{
+   background: white;
+   text-align: center;
+   width: 150px;
+   margin-left: 36rem;
+   text-decoration: none;
+   margin-bottom:2rem  ;
+}
+.xyz{
+   background: #080246;
+   background-position: left;
+}
+.Menu{
+    visibility: visible;
 }
