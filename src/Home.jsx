@@ -31,7 +31,7 @@ const Home = () => {
                         <h1> Roshan Chouhan</h1>
                         <h4> <span className='multiple'></span></h4>
                         <p>"Mastering the Art of Building the Digital World: The Journey of a Full-Stack Developer"</p>
-                        <a href={resume} className='btn btn-primary'  download="Resume 6.pdf">Download cv </a> <button className='btn btn-primary'> <NavLink className=" text-decoration-none text-white" to='/contect'> Contect Me</NavLink> </button>
+                        <a href={resume} className='btn btn-primary'  download="Resume 6.pdf">Download cv </a> <button className='btn btn-primary'> <NavLink className=" text-decoration-none text-white" to='/contect'> Contact Me</NavLink> </button>
                     </div>
                     <div className='image'>
                         <img src={image} alt=""/>
