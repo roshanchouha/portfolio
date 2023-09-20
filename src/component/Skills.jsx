@@ -57,20 +57,16 @@ const Skills = () => {
                          </div>
                          <div className='card'>
                               <div className='text-center card-img '>
-
                                    <FontAwesomeIcon className='Node' icon={faJava} />
                               </div>
                               <div className=' card-header text-center'>Java</div>
-
                          </div>
                          <div className='card'>
                               <div className='text-center card-img '>
                                    <img className='MySql' src={image} alt="" />
                               </div>
-                              <div className=' card-header text-center'>MySql</div>
-
+                           <div className=' card-header text-center'>MySql</div>
                          </div>
-
                     </div>
                </div>
           </div>

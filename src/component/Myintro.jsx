@@ -9,7 +9,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import Education from './Education';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import AOS from 'aos';
-import image from "../image/devloper 2.png"
+import image from "../image/meonpic.jpg"
  
 
 const Myintro = () => {
@@ -18,14 +18,14 @@ const Myintro = () => {
       }, [])
     return (
         <>
-            <div id='into'>
+            <div id='into' >
           
                 <div className='about'>
                
-                    <div className='image'>
-                        <img data-aos="flip-left" data-aos-duration="1500" src={image} alt="hii" />
+                    <div data-aos="flip-left" data-aos-duration="1500" className='image'>
+                        {/* <img data-aos="flip-left" data-aos-duration="1500" src={image} alt="hii" /> */}
                     </div>
-                    <div className='Detail' data-aos="fade-in" data-aos-duration="2000" >
+                    <div className='Detail' data-aos="fade-in" data-aos-duration="3000" >
                         <h3 className='text-primary fs-4'>My Intro</h3>
                         <h1 className={{ color: "red" }}>About Me</h1>
                         <p>Hello,

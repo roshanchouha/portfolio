@@ -1,6 +1,5 @@
 import React from 'react';
 import Project from './component/Project';
-import { useNavigate } from 'react-router-dom';
 const Portfolio = () => {
     return (
          <>

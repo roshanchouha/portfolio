@@ -11,6 +11,8 @@ import 'aos/dist/aos.css';
 import resume from './component/Resume 6.pdf'
 import { NavLink } from 'react-router-dom';
 import  image from './image/devloper 3d.webp'
+import { Menu } from '@mui/material';
+import  Menus  from './component/Menu'
 const Home = () => {
    useEffect( ()=>{
     const typed = new Typed('.multiple', {
@@ -24,6 +26,7 @@ const Home = () => {
    
     return (
         <>
+            <div><Menus className='Menu3'  /></div>
             <div id='home'>
                 <div className='herosection'>
                     <div className='homedetail p-2'>

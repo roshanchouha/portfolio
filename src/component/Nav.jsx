@@ -4,28 +4,28 @@ import { Link, NavLink } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 const Nav = () => {
     const MenuBtn =()=>{
-        const element = document.getElementById('MenuButton').classList.toggle("Menu");
+        const element = document.getElementById('MenuButton').classList.toggle("MenuBox2");
         console.log(element);
     }
 
     return (
-        <div className='container-fluid-lg  p-2 bg-white ' id='navigation'>
+        <div className='container-fluid-lg p-2 bg-white ' id='navigation'>
             <nav className='nav navb navbar-collapse  me-5'>
                 <div className='bg-white mx-2 '>
-                <img id='Logo' src={image} alt="" />
+                    <img id='Logo' src={image} alt="" />
                 </div>
-                <div >
+                <div  className='NavHid'>
                     <NavLink className=' bg-white text-decoration-none p-2 ps-4 text-primary-emphasis' to="/"> Home </NavLink>
                     <NavLink className='bg-white text-decoration-none p-2' to="/myintro">Myintro</NavLink>
                     <NavLink className='bg-white text-decoration-none p-2' to="/skills">Skills</NavLink>
                     {/* <NavLink className='bg-white text-decoration-none p-2' to="/service"> Service </NavLink> */}
-                    <NavLink className='bg-white text-decoration-none p-2' to="/portfolio"> Portfolio</NavLink>
+                    <NavLink className='bg-white text-decoration-none p-2' exact to="/portfolios"> Portfolio</NavLink>
                     <NavLink className='bg-white text-decoration-none p-2' to="/contect"> Contect Me</NavLink>
-                    <button id="MenuButton " style={{visibility:'hidden'}} onClick={MenuBtn}> <MenuIcon /> </button>
                 </div>
+                <button  className='Menu Menu2' onClick={MenuBtn} > <MenuIcon /> </button>
             </nav>
-            
- 
+
+
 
         </div>
     );

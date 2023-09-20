@@ -9,6 +9,6 @@ import 'aos/dist/aos.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
    <BrowserRouter>
-       <App />
+       <App id='Mainpage' />
    </BrowserRouter>
 )

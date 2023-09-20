@@ -13,10 +13,12 @@ import Contect from './Contect';
       <Routes>
           <Route exact path="/"  element={ <Home/>} /> 
           <Route exact path="/myintro"  element={ <Myintro/>} /> 
-          <Route exact path="/skills"  element={ <Skills />} /> 
-          <Route exact path="/service"  element={ <h1> home page</h1>} /> 
-          <Route exact path="/portfolio"  element={ <Portfolio />} /> 
+          <Route exact path="/skills"  element={ <Skills />} />  
+          <Route exact path="/portfolio"  element={ <Home />} /> 
+          <Route exact path="/portfolios"  element={ <Portfolio />} /> 
           <Route exact path="/contect"  element={ <Contect />} /> 
+          <Route  element={ <Home />} /> 
+
       </Routes>
     </>
   );
