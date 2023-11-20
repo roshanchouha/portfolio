@@ -8,11 +8,12 @@ import Footer from './component/Footer';
 import Typed from "typed.js";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import resume from './component/Resume 6.pdf'
+import resume from './component/resume 7.pdf'
 import { NavLink } from 'react-router-dom';
 import  image from './image/devloper 3d.webp'
 import { Menu } from '@mui/material';
 import  Menus  from './component/Menu'
+import ProjectDesign from './component/ProjectDesign';
 const Home = () => {
    useEffect( ()=>{
     const typed = new Typed('.multiple', {
@@ -26,7 +27,8 @@ const Home = () => {
    
     return (
         <>
-            <div><Menus className='Menu3'  /></div>
+             <div className=''>
+             <div><Menus className='Menu3'  /></div>
             <div id='home'>
                 <div className='herosection'>
                     <div className='homedetail p-2'>
@@ -34,7 +36,8 @@ const Home = () => {
                         <h1> Roshan Chouhan</h1>
                         <h4> <span className='multiple'></span></h4>
                         <p>"Mastering the Art of Building the Digital World: The Journey of a Full-Stack Developer"</p>
-                        <a href={resume} className='btn btn-primary'  download="Resume 6.pdf">Download cv </a> <button className='btn btn-primary'> <NavLink className=" text-decoration-none text-white" to='/contect'> Contact Me</NavLink> </button>
+                        <a href={resume} className='whiteButton'  download="Resume 7.pdf">Download cv </a>
+                     <button className=' ms-4'> <NavLink className="whiteButton" to='/contect'> Contact Me</NavLink> </button>
                     </div>
                     <div className='image'>
                         <img src={image} alt=""/>
@@ -44,7 +47,7 @@ const Home = () => {
              <div>
                 <Links/>
              </div>
-            <div> 
+            <div className='MYintro'> 
                <Myintro />
             </div>
             <div id='Skills' > 
@@ -54,11 +57,12 @@ const Home = () => {
                 <Portfolio />
             </div>
             <div id="Cont">
-                <Contect />
+                <Contect /> 
             </div>
             <div id="Foot">
                 <Footer />
             </div>
+             </div>
         </>
     );
 }

@@ -9,6 +9,8 @@ import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import image from "../image/icons8-mysql-100.png"
+import mongo from "../image/mongo.webp"
+import mongodb from "../image/mongodb.png"
 const Skills = () => {
      useEffect(() => {
           AOS.init();
@@ -29,11 +31,11 @@ const Skills = () => {
                               <div className=' card-header text-center'>CSS</div>
                          </div>
                          <div className='card'>
-                              <div className='card-img Js text-center'> <FontAwesomeIcon icon={faJs} className='JS' /></div>
+                              <div className='card-img  text-center javaScript'> <FontAwesomeIcon icon={faJs} className='JS' /></div>
                               <div className=' card-header text-center'>javaScript</div>
                          </div>
                          <div className='card'>
-                              <div className='text-center card-img'>
+                              <div className='text-center card-img react'>
                                    <FontAwesomeIcon className='React' icon={faReact} spin size="2xl" />
                                    {/* <img className='React' src="image/reactt.svg" alt="" /> */}
 
@@ -41,7 +43,7 @@ const Skills = () => {
                               <div className=' card-header text-center '>React Js</div>
                          </div>
                          <div className='card'>
-                              <div className=' text-center card-img '>
+                              <div className=' text-center card-img  node'>
 
                                    <FontAwesomeIcon className='Node' icon={faNodeJs} />
                               </div>
@@ -49,7 +51,7 @@ const Skills = () => {
 
                          </div>
                          <div className='card'>
-                              <div className=' text-center card-img '>
+                              <div className=' text-center card-img express'>
                                    <h3><span className='  mb-lg-2'>Express</span><FontAwesomeIcon icon={faJs} className='JS' /></h3>
                               </div>
                               <div className=' card-header text-center'>Express</div>
@@ -66,6 +68,14 @@ const Skills = () => {
                                    <img className='MySql' src={image} alt="" />
                               </div>
                            <div className=' card-header text-center'>MySql</div>
+                         </div>
+
+                         <div className='card'>
+                              <div className='text-center card-img mongo'>
+                                   <img className='mongodb' src={mongo} alt=""  width='100px'/>
+                                 
+                              </div>
+                           <div className=' card-header text-center'>mongodb</div>
                          </div>
                     </div>
                </div>

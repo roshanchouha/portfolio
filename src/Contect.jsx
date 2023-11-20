@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Links from './component/Links';
 import PlaceIcon from '@mui/icons-material/Place';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
@@ -8,8 +8,16 @@ import {  faLocationDot ,faPhoneFlip ,faEnvelope} from '@fortawesome/free-solid-
  
 
 const Contect = () => {
+    const [name,setName]= useState('')
+    const [email,setEmail]=useState('')
+    const[subject,setSubject]=useState('')
+    const[msg,setMsg]=useState('')
      const submit =()=>{
          alert("Thankyou  for Connecting Us");
+         setName('')
+         setEmail('')
+         setMsg('')
+         setSubject('')
      }
     return (
         <>
@@ -34,7 +42,7 @@ const Contect = () => {
                                             <div className="col-md-6">
                                                 <div className="md-form mb-0">
                                                 <label for="name" className="">Your name</label>
-                                                    <input type="text" id="name" name="name" className="form-control" />
+                                                    <input type="text" id="name" value={name} name="name" className="form-control" onChange={(e)=>setName(e.target.value)} />
                                                          
                                                 </div>
                                             </div>
@@ -44,7 +52,7 @@ const Contect = () => {
                                             <div className="col-md-6">
                                                 <div className="md-form mb-0">
                                                 <label for="email" className="">Your email</label>
-                                                    <input type="text" id="email" name="email" className="form-control" />
+                                                    <input type="text" id="email" value={email}  name="email" className="form-control" onChange={(e)=>setEmail(e.target.value)}/>
                                                         
                                                 </div>
                                             </div>
@@ -56,7 +64,7 @@ const Contect = () => {
                                             <div className="col-md-12">
                                                 <div className="md-form mb-0">
                                                 <label for="subject" className="">Subject</label>
-                                                    <input type="text" id="subject" name="subject" className="form-control"/>
+                                                    <input type="text" id="subject" value={subject} name="subject" className="form-control" onChange={(e)=>setSubject(e.target.value)}/>
                                                          
                                                 </div>
                                             </div>
@@ -69,7 +77,7 @@ const Contect = () => {
 
                                                 <div className="md-form">
                                                 <label for="message">Your message</label>
-                                                    <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
+                                                    <textarea type="text" id="message" value={msg} name="message" rows="2" className="form-control md-textarea" onChange={(e)=>setMsg(e.target.value)}></textarea>
                                                     
                                                 </div>
 
