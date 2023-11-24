@@ -4,11 +4,14 @@ import img from "./image/timer.avif";
 import grocery from "./image/online grocery.avif";
 import examForge from "./image/test.jpg";
 import todo from "./image/todolist.png";
+import  Menus  from './component/Menu'
 
 const Portfolio = () => {
   return (
     <>
+     <div><Menus className='Menu3'  /></div>
       <div id="Portfolio" className="  container  col-11  min-vh-100 ">
+      
         <h5 className="text-center   text-primary">My Portfolio</h5>
         <h1 className="text-center">Recent Work</h1>
         <div className="Projects">
@@ -17,7 +20,7 @@ const Portfolio = () => {
             image={examForge}
             title="ExamForge"
             about="ExamForge is a mock test platform and a comprehensive project seamlessly integrating MongoDB, Express.js, React.js, and Node.js. Designed for efficient and realistic exam simulations, it offers a user-friendly interface and robust backend, ensuring a seamless and responsive testing experience."
-             
+            link="https://www.linkedin.com/feed/update/urn:li:activity:7133523866089312256/"
           />
           <Project
             className="project2"

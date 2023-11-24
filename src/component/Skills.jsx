@@ -11,12 +11,14 @@ import 'aos/dist/aos.css';
 import image from "../image/icons8-mysql-100.png"
 import mongo from "../image/mongo.webp"
 import mongodb from "../image/mongodb.png"
+import  Menus  from '../component/Menu'
 const Skills = () => {
      useEffect(() => {
           AOS.init();
      }, [])
      return (
-          <div>
+          <div> 
+              <div><Menus className='Menu3'  /></div>
                <div id='Skill' className=' container-fluid min-vh-100   '>
                     <h5 className='text-center text-primary'>Why Choose Me</h5>
                     <h1 className='text-center'>My Experties Area</h1>

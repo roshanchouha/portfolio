@@ -155,6 +155,7 @@ html{
  }
 
  #eduction{
+    
     height: 100vh;
  }
  #eduction .EducationDetail{
@@ -263,7 +264,7 @@ html{
   width: 90vw;
   grid-row: 2;
   margin: 1rem;
-  margin-left: 0.4rem;
+  margin-left: 0.1rem;
    
   
 }
@@ -274,7 +275,8 @@ html{
  border-radius: 2rem;
  } 
  #into .about .info{
-  width: 400px;
+  width: 380px;
+  margin-left: -1rem;
  }
  #into .about .hobbie{
   display: flex;
@@ -283,7 +285,7 @@ html{
 }
 
  #eduction{
-  margin-top: 25rem;
+  margin-top: 28rem;
   
  }
  #eduction .Deg{
@@ -304,7 +306,7 @@ html{
 }
 #eduction .MCA1{
    display: block;
-   margin-top:11rem;
+   margin-top:12rem;
    margin-left: -7rem;
    
 }
@@ -346,13 +348,13 @@ html{
 }
 }
 #Card{
-   width: 400px;
+   width: 380px;
    background: blue;
     
 }
  
 #Card1{
-   width: 400px;
+   width: 380px;
    color: #130f40;
 }
 #Card1 .Name{
@@ -447,6 +449,17 @@ html{
     width: 100vw;
     margin: 10rem 0; 
 }
+#Card{
+   width: 350px;
+   
+   background: blue;
+    
+}
+ 
+#Card1{
+   width: 350px;
+   color: #130f40;
+}
 }
 #cards{
     
@@ -490,7 +503,7 @@ html{
     grid-template-columns: repeat(1,200px);
     justify-content:space-between;
     grid-gap: 2rem;
-    margin: 5rem 2rem;
+    margin: 5rem 1rem;
      
  }
  #cards{
@@ -578,10 +591,11 @@ html{
 #Foot{
    position: relative;
    top:29rem;
+   
 }
 .Footer{
-  
    background:#080246;
+   margin-left:1.8rem !important;
 }
  
 .Footer .foot{
@@ -605,6 +619,7 @@ html{
 .xyz{
    background: #080246;
    background-position: left;
+
 }
 .Menu{
     display: none;
@@ -630,10 +645,15 @@ html{
    background: white;
    text-align: center;
    width: 150px;
-   margin-left: 7rem;
+   margin-left: 6rem;
    text-decoration: none;
    margin-bottom:2rem  ;
 }
+.Footer{
+   background:#080246;
+   margin-left:0.2rem !important;
+}
+ 
 }
  
 .MenuBox{
@@ -641,8 +661,8 @@ html{
   box-shadow: var(--box-shadow);
   position: absolute;
   overflow: auto;
-  top:-18rem;
- 
+  left:-18rem;
+  z-index: 100;
   
 
 }

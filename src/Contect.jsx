@@ -5,7 +5,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import EmailIcon from '@mui/icons-material/Email';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faLocationDot ,faPhoneFlip ,faEnvelope} from '@fortawesome/free-solid-svg-icons';
- 
+import  Menus  from './component/Menu'
 
 const Contect = () => {
     const [name,setName]= useState('')
@@ -22,6 +22,7 @@ const Contect = () => {
     return (
         <>
             <div className='container min-vh-100    m' id='Contects'>
+            <div><Menus className='Menu3' /></div>
              <div  id='Img'></div>
                 <div  >
                     <h5 className='Head text-center text-primary'>Contect Me</h5>
